@@ -1,19 +1,19 @@
-import {createApp} from 'vue'
-import App from './App.vue'
-import PrimeVue from 'primevue/config';
-import Card from 'primevue/card';
-import DataTable from 'primevue/datatable';
-import Column from 'primevue/column';
-import "primevue/resources/themes/saga-blue/theme.css";
-import "primevue/resources/primevue.min.css";
+import MovieInstagram from "@/components/MovieInstagram";
 import "primeicons/primeicons.css";
 import Avatar from 'primevue/avatar';
 import AvatarGroup from 'primevue/avatargroup';
-import TabMenu from 'primevue/tabmenu';
-import {createRouter, createWebHistory} from "vue-router";
-import MovieInstagram from "@/components/MovieInstagram";
+import Card from 'primevue/card';
+import Column from 'primevue/column';
+import PrimeVue from 'primevue/config';
+import DataTable from 'primevue/datatable';
 import Divider from 'primevue/divider';
 import InputText from 'primevue/inputtext';
+import "primevue/resources/primevue.min.css";
+import "primevue/resources/themes/saga-blue/theme.css";
+import TabMenu from 'primevue/tabmenu';
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from "vue-router";
+import App from './App.vue';
 
 
 const app = createApp(App);

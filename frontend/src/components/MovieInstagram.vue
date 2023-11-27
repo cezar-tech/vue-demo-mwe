@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import {getImgUrl} from "@/utils/img-utils";
-import {getBestFriends, getComments, getLikes, getPosts} from "@/service/backend-service";
-import Loader from "@/components/Loader";
 import ActiveUserMenu from "@/components/ActiveUserMenu";
+import Loader from "@/components/Loader";
 import PostsSection from "@/components/PostsSection";
+import { getBestFriends, getComments, getLikes, getPosts } from "@/service/backend-service";
+import { getImgUrl } from "@/utils/img-utils";
 import Divider from "primevue/divider";
 
 export default {

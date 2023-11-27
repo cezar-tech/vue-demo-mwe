@@ -30,10 +30,10 @@
 </template>
 
 <script>
-import {ref} from "@vue/reactivity";
-import {getImgUrl} from "@/utils/img-utils";
-import DataTable from "primevue/datatable";
+import { getImgUrl } from "@/utils/img-utils";
+import { ref } from "@vue/reactivity";
 import Column from "primevue/column";
+import DataTable from "primevue/datatable";
 import InputText from "primevue/inputtext";
 
 export default {

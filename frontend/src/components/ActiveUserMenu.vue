@@ -7,15 +7,15 @@
 </template>
 
 <script>
-import {getImgUrl} from "@/utils/img-utils";
-import TabMenu from "primevue/tabmenu";
+import { getImgUrl } from "@/utils/img-utils";
 import Avatar from "primevue/avatar";
+import TabMenu from "primevue/tabmenu";
 
 export default {
   name: "ActiveUserMenu",
   //the initial value of props is always constant, see setup(props)
   props: {
-    users: []
+    users: [String]
   },
   components: {
     TabMenu, Avatar
@@ -26,7 +26,9 @@ export default {
             return {
               label: user,
               icon: this.getImgUrl(user),
-              to: `/ashero/${user}`
+              command: () => {
+                this.$router.push(`/ashero/${user}`);
+              }
             };
           }
       );
